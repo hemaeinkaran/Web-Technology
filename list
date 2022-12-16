@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title> List Tags </title>
+</head>
+<body>
+< font style="Arial" size "20Px" color ="GRAY" >
+<font style="Arial" size "20Px" color ="GRAY">
+<h1>Lists</h1></font>
+<h2>Unordered lists , which are like lists of bullet points <br>
+Ordered lists , which use a sequence of numbers or letters instead of bullet points <br>
+Definition lists , which allow you to specify a term and its definition<br>
+</h2>
+<h3>
+< ul > element (which stands for
+unordered list). <br>
+Each bullet point or line you want to write should then be contained between opening
+< li > tags and closing < /li > tags <br>(the li stands for list item ).</h3>
+<br>
+< ul >
+< li > Bullet point number one < /li >
+< li > Bullet point number two < /li >
+< li > Bullet point number three < /li >
+< /ul >
+<br> UN ORDERED LIST 
+<ul>
+<li> Bullet point number one </li>
+<li> Bullet point number two </li>
+<li> Bullet point number three </li>
+</ul>
+<br>
+Ordered Lists
+<br>
+An ordered list is contained inside the < ol > element. <br>
+Each item in the list should then be nested inside
+the 
+<br>
+< ol > element and contained between opening < li > and closing < /li > tags
+<br>
+< ol >
+< li > Point number one < /li >
+< li > Point number two < /li >
+< li > Point number three < /li >
+< /ol ><br>
+example<br>
+<ol>
+<li> Point number one </li>
+<li> Point number two </li>
+<li> Point number three </li>
+</ol>
+<br>
+Using the type Attribute to Select Numbers, Letters, or Roman
+Numerals in Ordered Lists (Deprecated)<br>
+The type attribute on the <br>< ol > element enables you to change the ordering of list items from the default
+of numbers to the options listed in the table that follows,<br> by giving the type attribute the corresponding
+character.
+Value for type Attribute Description Examples<br>
+1 Arabic numerals (the default) 1, 2, 3, 4, 5<br>
+A Capital letters A, B, C, D, E<br>
+a Small letters a, b, c, d, e<br>
+I Large Roman numerals I, II, III, IV, V<br>
+i Small Roman numerals i, ii, iii, iv, v<br>
+For example, the following is an ordered list that uses small Roman numerals (
+<br>
+< ol type=”i” ><br>
+< li > Point number one < /li ><br>
+< li > Point number two < /li ><br>
+< li > Point number three < /li ><br>
+< /ol ><br>
+<br>
+<ol type="i">
+<li> Roman small letter one </li>
+<li> Roman small letter two </li>
+<li> Roman small letter three </li>
+</ol>
+
+<br>
+<ol type="I">
+<li> Roman big letter one </li>
+<li> Roman big letter two </li>
+<li> Roman big letter three </li>
+</ol>
+
+<br>
+
+<ol type="a">
+<li> Alaphabet a</li>
+<li> Alaphabet b </li>
+<li> Alaphabet c</li>
+</ol>
+
+<br>
+<ol type="A">
+<li> Alaphabet A </li>
+<li> Alaphabet B  </li>
+<li> Alaphabet C </li>
+</ol>
+
+<br> START Attibute<br>
+< ol type=”A” start=”4” ><br>
+< li > Point number one < /li ><br>
+< li > Point number two < /li ><br>
+< li > Point number three < /li ><br>
+< /ol >
+
+<ol type="A" start = "4">
+<li> Point number one </li>
+<li> Point number two </li>
+<li> Point number three </li>
+</ol>
+<br>
+Definition Lists
+<br>
+The definition list is a special kind of list for providing terms followed by a short text definition or<br>
+description for them. <br>Definition lists are contained inside the < dl > element. <br>The < dl > element then<br>
+contains alternating < dt > and < dd > elements. <br>The content of the < dt > element is the term you will be
+defining.<br> The < dd > element contains the definition of the previous < dt > element. <br>For example, here is a
+definition list that describes the different types of lists in XHTML<br>
+<br>< dl >
+<br>< dt > Unordered List < /dt >
+<br>< dd > A list of bullet points. < /dd >
+<br>< dt > Ordered List < /dt >
+<br>< dd > An ordered list of points, such as a numbered set of steps. < /dd >
+<br>< dt > Definition List < /dt >
+<br>< dd > A list of terms and definitions. < /dd >
+<br>< /dl >
+<br>
+<dl >
+<dt> Unordered List </dt>
+<dd> A list of bullet points. </dd>
+<dt> Ordered List </dt>
+<dd> An ordered list of points, such as a numbered set of steps. </dd>
+<dt> Definition List </dt>
+<dd> A list of terms and definitions. </dd>
+</dl>
+</body>
+</html>
