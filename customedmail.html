@@ -1,0 +1,59 @@
+<!DOCTYPE html>   
+<html>   
+<head>   
+    <title>Using mailto link</title>   
+    <style>   
+        h1 {   
+            color: brown;   
+        }   
+          h3{  
+          color: green  
+          }  
+        .container {   
+            width: 600px;   
+            border: 2px solid black;   
+            padding: 25px;   
+              
+        }   
+    </style>   
+</head>   
+    
+<body align = center>   
+    <div class="container">   
+        <h1>Web Technology</h1>   
+        <b> <h3> Using mailto link </h3> </b>   
+        <form method="POST"   
+              action="mailto: jp@gmail.com? Subject= Feedback/ Suggestion"   
+              enctype="multipart/form-data">   
+            <div class="control">   
+                Name:   
+                <input aria-required=""  
+                       id="name"  
+                       type="text" />   
+            </div>   
+            <br>   
+            <div class="control">   
+                Mob no:   
+                <input aria-required=""   
+                       id="mobile_number"   
+                       type="tel" />   
+            </div>   
+            <br>   
+            <div class="control">   
+                Suggestion/ Feedback:   
+                <br>  
+                <textarea rows="8" cols="25"  
+                          name="comment">   
+    
+                </textarea>   
+            </div>   
+            <br>   
+            <div class="control">   
+                <input type="submit"   
+                       value="Submit" />   
+            </div>   
+    
+        </form>   
+    </div>   
+</body>   
+</html>  

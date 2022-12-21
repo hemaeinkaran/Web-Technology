@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title> Editing Text </title>
+</head>
+<body>
+< font style="Arial" size "20Px" color ="GReen" >
+<font style="Arial" size "20Px" color ="GReen">
+<h1>Editing Text</h1></font>
+<br>The < ins > element for when you want to add text (usually shown underlined in a browser)<br>
+The < del > element for when you want to delete some text (usually shown crossed out in a
+browser)
+<br>
+
+< h1 > How to Spot a Wrox Book < /h1 ><br>
+< p > Wrox-spotting is a popular pastime in bookshops. Programmers like to find
+the distinctive < del > blue < /del > < ins > red < /ins > spines because they know that
+Wrox books are written by < del > 1000 monkeys < /del > < ins > Programmers < /ins > for
+Programmers. < /p ><br>
+< ins > < p > Both readers and authors, however, have reservations about the use
+of photos on the covers. < /p > < /ins ><br>
+
+<br>
+<h1  How to Spot a Wrox Book </h1><br>
+<p> Wrox-spotting is a popular pastime in bookshops. Programmers like to find
+the distinctive <del> blue </del> <ins> red </ins> spines because they know that
+Wrox books are written by <del> 1000 monkeys </del> <ins> Programmers </ins> for
+Programmers. </p><br>
+<ins> <p> Both readers and authors, however, have reservations about the use
+of photos on the covers. </p> </ins><br>
+
+</body>
+</html>

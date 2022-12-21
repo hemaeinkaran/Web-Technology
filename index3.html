@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebTechnology</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            word-wrap: break-word;
+        }
+
+        header {
+            background-color: deepskyblue;
+            padding: 10px;
+            box-shadow: 2px 2px 5px grey;
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items: center;
+            margin: 0;
+        }
+
+        ul li {
+            text-transform: uppercase;
+            font-weight: bolder;
+            word-wrap: break-word;
+        }
+
+        ul li a {
+            text-decoration: none;
+            padding: 5px;
+            color: white;
+        }
+
+        .units a:hover {
+            background-color: white;
+            color: deepskyblue;
+        }
+
+        .title {
+            margin-right: auto;
+            font-style: italic;
+        }
+
+        .main {
+            display: none;
+        }
+
+        .webimg {
+            width: 100%;
+        }
+
+        @media only screen and (max-width:590px) {
+            body {
+                font-size: 15px;
+            }
+
+            ul {
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: flex-start;
+            }
+
+            .title {
+                margin: auto;
+                font-size: 15px;
+            }
+
+            .units {
+                display: none;
+                padding-top: 10px;
+            }
+
+            .main {
+                display: block;
+            }
+
+            h1 {
+                font-size: 15px;
+            }
+        }
+
+        @media only screen and (max-width:200px) {
+
+            ul {
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: flex-start;
+            }
+
+            ul li{
+                display:inline-flex;
+                padding-left: 0;
+                margin-left: -20px;
+                font-size: 7px;
+            }
+
+            .title {
+                font-size: 10px;
+            }
+
+            .units {
+                display: none;
+                padding-top: 10px;
+				
+            }
+
+            .main {
+                display: block;
+            }
+
+            h1 {
+                font-size: 15px;
+            }
+
+            .logo {
+                display: none;
+            }
+        }
+
+        footer {
+            background-color: deepskyblue;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .about {
+            box-shadow: 0px 0px 5px deepskyblue;
+            margin: 10px;
+            padding: 10px;
+            text-indent: 20%;
+            border-radius: 5%;
+        }
+
+        .about::first-letter {
+            font-size: x-large;
+            padding: 2px;
+            font-weight: bolder;
+        }
+
+        .logo {
+            width: 100px;
+            height: 100px;
+        }
+		
+		
+		
+		li ul { display: none; }
+
+ul li a {
+  display: block;
+  padding: 1em;
+  text-decoration: none;
+  white-space: nowrap;
+  color: #fff;
+}
+
+ul li a:hover { background: #2c3e50; }
+
+/* Display the dropdown */
+
+
+li:hover > ul {
+  display: block;
+  position: absolute;
+}
+
+li:hover li { float: none; }
+
+li:hover a { background: #1bc2a2; }
+
+li:hover li a:hover { background: #2c3e50; }
+
+.main li ul li { border-top: 0; }
+
+/* Displays second level dropdowns to the right of the first level dropdown */
+
+
+ul ul ul {
+  left: 100%;
+  top: 0;
+}
+
+/* Simple clearfix */
+
+
+
+ul:before,
+ul:after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
+
+ul:after { clear: both; }
+
+}
+		 
+    </style>
+</head>
+
+<body>
+
+    <header class="container">
+        <nav>
+            <ul>
+                <li><img class="logo" src="he.jpeg"  alt="WebTechnology"></li>
+                <li class="title"> &nbsp;&nbsp;&nbsp;&nbsp;SEMESTER II   WEB TECHNOLOGY UCS20C21 </li>
+                <li class="main" id="main">&equiv;</li>
+                <li class="units"><a href="unit-1.html" target="frame">UNIT 1</a></li>
+				<!-- <ul>
+					<li><a href="presentational.html">Presentation Tags </a></li>
+					<li><a href="phrase.html">Phrase Tags </a></li>
+					</ul> -->
+                <li class="units"><a href="unit-2.html" target="frame">UNIT 2</a></li>
+                <li class="units"><a href="unit-3.html" target="frame">UNIT 3</a></li>
+                <li class="units"><a href="unit-4.html" target="frame">UNIT 4</a></li>
+                <li class="units"><a href="unit-5.html" target="frame">UNIT 5</a></li>
+                <li class="units"><a href="Example/examples.html" target="frame">EXAMPLES</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+       <!-- <h1>WebTechnology</h1>
+        <img class="webimg" src="https://proplusacademy.com/wp-content/uploads/2016/01/web-development-services.jpg"
+            alt="web development"> -->
+       
+            
+    <section>
+        <iframe src="unit-1.html" frameborder="0" name="frame" width="100%" height="500px"></iframe>
+	
+    </section>
+    <footer>
+        <div class="csimg">
+            <img src="cs.png" alt="" width="100%">
+        </div>
+        LMS Created BY HEMA,A.M.     </footer>
+    <script>
+        document.getElementById("main").addEventListener("click", () => {
+            [...document.getElementsByClassName("units")].forEach(e => e.style.display == "block" ? e.style.display = "none" : e.style.display = "block");
+        });
+    </script>
+</body>
+
+</html>
