@@ -1,0 +1,29 @@
+<html>
+<head>
+<script type="text/javascript">
+var currea,oldrea,conunit;
+function ebbill()
+{
+currea=parseInt(prompt("enter currea"));
+oldrea=parseInt(prompt("enter oldrea"));
+conunit=currea-oldrea;
+if(conunit>=500)
+{
+document.write("The ebbill amount is "+conunit*5);
+}
+else if(conunit>=300)
+{
+document.write("The ebbill amount is "+conunit*3);
+}
+else 
+{
+document.write("The ebbill amount is "+conunit*2);
+}
+}
+</script>
+</head>
+<body>
+<input type="button" value="AMOUNT" onclick="ebbill()"/>
+</body>
+</html>
+

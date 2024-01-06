@@ -1,0 +1,39 @@
+<html>
+<head>
+<title>calculation</title>
+<script type="text/javascript" language="javascript">
+var p,n,r;
+function simplecal()
+{
+p=parseInt(frm.prin.value);
+n=parseInt(frm.yrs.value);
+r=parseInt(frm.rate.value);
+frm.intr.value=(p*n*r)/100;
+frm.amt.value=frm.prin.value;
+}
+function comcal()
+{
+p=parseInt(frm.prin.value);
+n=parseInt(frm.yrs.value);
+r=parseInt(frm.rate.value);
+frm.intr.value=Math.round(p*Math.pow((1+r/100),n)-p);
+frm.amt.value=parseInt(frm.prin.value)+parseInt(frm.intr.value);
+}
+</script>
+</head>
+<body>
+<form name="frm">
+<h1 align="center">simple and compound interest</h1>
+<table border="2" align="center" bgcolor="c0c0c0" cellpadding=2>
+<tr><th colspan=3 align="center"><font size="3" color="blue">simple and compound interest
+<tr><td>principal<td><input type="text" name="prin" id="prin">
+<tr><td>years<td><input type="text" name="yrs" id="yrs">
+<tr><td>rate of interest<td><input type="text" name="rate" id="rate">
+<tr><td>interest<td><input type="text" name="intr" id="intr">
+<tr><td>amount<td><input type="text" name="amt" id="amt">
+<tr><td><input type="button" value="simpleinterest" name="simple" onclick="simplecal()">
+<td><input type="button" value="compoundinterest" name="compound" onclick="comcal()">
+</table>
+</form>
+</body>
+</html>

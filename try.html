@@ -1,0 +1,34 @@
+<html>
+<head>
+<title>Try&catch</title>
+<script language="javascript"type="text/javascript">
+var x=parseInt(prompt("enter a number betweet 1 to 10:"," "));
+var er;
+try
+{
+if(x>10)
+	throw"err1";
+else if(x<=0)
+	throw"err2";
+else 
+	throw"err3";
+}
+catch(er)
+{
+if(er=="err1")
+{
+	alert("ERROR!!!the value is too high");
+}
+if(er=="err2")
+{
+	alert("ERROR!!!the value is too low");
+}
+if(er=="err3")
+{
+	alert(" the value is "+x);
+}
+}
+</script>
+<body>
+</body>
+</html>
