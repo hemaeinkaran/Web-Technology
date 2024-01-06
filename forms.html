@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Form Introdcution</title>
+</head>
+<body>
+<h4>Table of Contents</h4>
+<ul>
+<li><a href="#form">What is an HTML Form?</a></li>
+<li><a href="#form1">HTML < form > Element</a></li>
+<li><a href="#form3">HTML < input> Element</a></li>
+<li><a href="#form4">Common HTML Form Tags</a></li>
+<li><a href="#form5">HTML Form Controls</a></li>
+<li>Text Input Controls</li>
+<li>Password in an HTML Form</li>
+<li>Radio Button Control</li>
+<li>Checkbox Control</li>
+<li>Submit Button Control</li>
+<ul>
+
+<a name="form">What is an HTML Form?</a>
+<h4>An HTML or a Web form helps collect user input. 
+<br>HTML forms can have different fields, such as text areas, text boxes, radio buttons, checkboxes,
+ drop-down lists, file uploads, etc.</br>
+
+The collected data can be validated on the client browser with JavaScript programming language.<br> After validation of form data on the client-side, the user clicks on the Submit button in the form. After this, data is sent to the server for further processing.
+
+</h4>
+<br>
+
+<a name="form1">HTML < form > Element </a>
+<h3>
+To create an HTML form, we will use the HTML <form> element. <br>It starts with the <form> tag and ends with the </form> tag. We can add the input elements within the form tags for taking user input.
+<br>
+Syntax:
+<br>
+<form>
+form elements, such as text box, textarea, etc.
+</form>
+<br>
+ </h3>
+<a name="form3">HTML < input > Element </a>
+<h3>
+To create form fields and to receive input from the user, we use the HTML < input > element.<br>
+We can use various input fields to take different information from the user.<br>
+ Using different Type attributes, we can display an <input> element in various ways.
+
+<br>
+Here is an example to take text input from the user:
+
+< !DOCTYPE html><br>
+< html><br>
+   < head><br>
+      < title>Text Input</title><br>
+   < /head><br>
+< body>  <br>
+  < form>  <br>
+     Enter your first name  <br>  
+    < input type="text" name="username">  <br>
+  < /form>  <br>
+< /body><br>
+< /html><br>
+
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Text Input</title>
+   </head>
+<body>  
+  <form>  
+     Enter your first name  <br>  
+    <input type="text" name="username">  
+  </form>  
+</body>
+</html>
+ <br>
+ 
+Output:
+
+Simple Text Input - HTML Input Element
+<a name="form4">Common HTML Form Tags</a>
+<br>The following are some of the commonly used HTML tags to create web forms:
+<br>
+Tag	Description
+<br>< form>	This tag defines an HTML form to receive input from the user.
+<br>< input>	Defines an input control.
+<br>< textarea>	Defines a multi-line input control.
+<br>< label>	Creates a caption for input elements.
+<br>< select> & < option>	Create a drop-down menu with various options. The < select> tag defines the selection or the drop-down, <br>while the < option> tag represents all the options in the list.
+<br>< optgroup>	Creates a drop-down list of related options.  
+<br>< fieldset>	Groups the related element in a web form.  
+<br>< legend>	It defines a caption for the < fieldset> element.
+<br>< button>	Creates a clickable button.
+<br>
+
+
+<a name="form5">Create an HTML Form to Input the Basic Details of an Employee</a>
+<br>< !DOCTYPE html>
+<br>< html lang="en">
+<br>< head>
+<br>< title>Employee Details</title>
+<br>< /head>
+<br>< body>
+ <br> < form>
+    <br>< fieldset>
+   <br> < legend>Employee Details</legend>
+     <br>< p>
+      <br>   First name: < input type = "text" name = "fname" />
+ <br> < /p>
+  <br> < p>
+   <br>      Last name: < input type = "text" name = "lname" />
+  <br>< /p>
+ 
+ <br>  < p>
+       <br>  < input type = "radio" name = "Gender" value = "Male"> Male
+       <br>  < input type = "radio" name = "Gender" value = "Female"> Female
+<br>< /p>
+ 
+<br>< p>
+<br>Employee ID: <  input type = "text" name = "ID" />
+<br>< /p>
+ 
+<br>< p>
+<br>Designation: < input type = "text" name = "ID" />
+<br>< /p>
+ 
+<br>< p>
+<br>Phone Number: < input type = "text" name = "phone" />
+<br>< /p>
+ 
+ <br>< p>
+<br>      < input type = "submit" name = "submit" value = "Submit" />
+  <br>  < /p>
+<br>< /fieldset>
+<br>< /form>
+<br>< /body>
+<br>< /html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Employee Details</title>
+</head>
+<body>
+  <form>
+    <fieldset>
+    <legend>Employee Details</legend>
+     <p>
+         First name: <input type = "text" name = "fname" />
+  </p>
+   <p>
+         Last name: <input type = "text" name = "lname" />
+  </p>
+ 
+   <p>
+         <input type = "radio" name = "Gender" value = "Male"> Male
+         <input type = "radio" name = "Gender" value = "Female"> Female
+</p>
+ 
+<p>
+Employee ID: <input type = "text" name = "ID" />
+</p>
+ 
+<p>
+Designation: <input type = "text" name = "ID" />
+</p>
+ 
+<p>
+Phone Number: <input type = "text" name = "phone" />
+</p>
+ 
+ <p>
+      <input type = "submit" name = "submit" value = "Submit" />
+    </p>
+</fieldset>
+</form>
+</body>
+</html>
+HTML Form Controls
+An HTML form has form controls,<br>
+ such as text fields, text areas, checkboxes, buttons, etc. <br>
+It is a user interface control that acts as a point of connection between the user and the server. <br>
+Here are some of the commonly used HTML form controls to gather data:
+
+Text Input Controls
+Password in an HTML Form
+Radio Button Control
+Checkbox Control
+Submit Button Control
+Let us understand each of these Form controls using the different Type attributes in HTML <form> tag.
+
+1. Text Input Controls
+The <input type=”text”> control defines a single-line text input. We can use the HTML <textarea> tag for creating multi-line input control, if the user imput may be longer than a single line.
+
+Let us look at an example to take the user’s first name and last name as input.
+
+Example of a form with Text input fields:
+
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Text Input Control</title>
+   </head>
+<body>
+      <form >
+         First name: <input type = "text" name = "fname" /><br>
+         Last name: <input type = "text" name = "lname" />
+      </form>
+   </body>
+</html>
+ 
+Output:
+
+HTML Forms - Text Input Field
+2. Password in an HTML Form
+We use the type value as ‘password’ to take the password as input. The password entered by the user will not be visible in password field control.
+
+Example:
+
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Password Input Control</title>
+   </head>
+<body>
+<form>  
+<p>
+          <label>Username : <input type="text" /></label>
+</p>
+<p>
+          <label>Password : <input type="password" /></label>
+</p>
+</form>
+</body>
+</html>
+Output:
+
+HTML Password Input
+3. Radio Button Control
+Radio buttons let users select one option out of many options. We can create a Radio Button control using the HTML <input> tag and the type attribute will be radio. <input type=”radio”> defines a radio button.
+
+Example of an HTML form with radio buttons:
+
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Radio Button Control</title>
+   </head>
+<body>
+      <form>
+         <input type = "radio" name = "Gender" value = "Male"> Male
+         <input type = "radio" name = "Gender" value = "Female"> Female
+      </form>
+   </body>
+</html>
+Output:
+
+HTML Forms - Radio Button
+4. Checkbox Control
+The checkbox is used when more than one option is to be selected from the given options. We can create it using the HTML <input> tag and set the type attribute to the checkbox.
+
+Example:
+
+Below is an example to create a form with checkboxes.
+
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Checkbox Control</title>
+   </head>
+   <body>
+      <form>
+     Choose Colors:<br>
+         <li><input type="checkbox" name="color" value="red" />Red</li>
+        <li><input type="checkbox" name="color" value="blue" />Blue</li>
+        <li><input type="checkbox" name="color" value="green" />Green</li>
+      </form>
+   </body>
+</html>
+Output:
+
+HTML Forms - Checkbox Input
+5. Submit Button Control
+We can create clickable buttons in HTML using the <input>tag and setting its type attribute to Submit. Using the type=”submit”, we can add a submit button on the web page.
+
+On clicking on the Submit button in an HTML form, users can submit the details provided in the form. These details are submitted to the form handler – a file on the server with a script for processing input data. 
+
+Syntax:
+
+<button type="submit">submit</button>
+Here is an example to create an HTML form with Submit button:
+
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Submit Button</title>
+   </head>
+<body>
+   <form>
+<p>
+          <label>Username : <input type="text" /></label>
+</p>
+<p>
+          <label>Password : <input type="password" /></label>
+</p>     
+<p>
+      <input type = "submit" name = "submit" value = "Submit" />
+    </p>
+  </form>
+</body>
+</html>
+Output:
+
+Submit Button Control in HTML
+
+HTML Forms Example
+Let us look at an example to create a basic employee detail form that will take input data, including First Name, Last Name, Gender, Employee ID, Designation, and Phone Number.
+
+Create an HTML Form to Input the Basic Details of an Employee
+To create an Employee detail form, we will use a combination of tags, such as <legend> to specify the caption; <input> tag for First Name, Last Name, and Phone Number; radio button for gender; <button> to submit, etc.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Employee Details</title>
+</head>
+<body>
+  <form>
+    <fieldset>
+    <legend>Employee Details</legend>
+     <p>
+         First name: <input type = "text" name = "fname" />
+  </p>
+   <p>
+         Last name: <input type = "text" name = "lname" />
+  </p>
+ 
+   <p>
+         <input type = "radio" name = "Gender" value = "Male"> Male
+         <input type = "radio" name = "Gender" value = "Female"> Female
+</p>
+ 
+<p>
+Employee ID: <input type = "text" name = "ID" />
+</p>
+ 
+<p>
+Designation: <input type = "text" name = "ID" />
+</p>
+ 
+<p>
+Phone Number: <input type = "text" name = "phone" />
+</p>
+ 
+ <p>
+      <input type = "submit" name = "submit" value = "Submit" />
+    </p>
+</fieldset>
+</form>
+</body>
+</html>
